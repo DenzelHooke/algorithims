@@ -32,3 +32,14 @@ values = [
 sorted = selectionSort(values)
 
 print(sorted)   
+
+def selectionSort(array):
+    for i in range(0, len(array)-1):
+        lowest = i
+        
+        for p in range(i+1, len(array)):
+            if array[p] < array[lowest]:
+                lowest = p
+        
+
+        temp
