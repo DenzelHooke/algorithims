@@ -16,8 +16,8 @@ def binary_search(arr, search_value):
             return midpoint_value
         
         elif search_value < midpoint_value:
-  
             upper = midpoint -1
+            
         elif search_value > midpoint_value:
             lower = midpoint +1
 

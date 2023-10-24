@@ -5,7 +5,7 @@ def selectionSort(arr):
     for i in range(0, length_until_sorted):
         lowestNumberIndex = i
 
-        for x in range(1, length_until_sorted+1):
+        for x in range(i+1, length_until_sorted+1):
             if(arr[x] < arr[lowestNumberIndex]):
                 lowestNumberIndex = x
 
@@ -18,5 +18,15 @@ def selectionSort(arr):
 
 selectionSort(values)
 
+
+def selectionSort(arr):
+
+    for i in arr:
+        lowest = i
+
+        for x in range(i+1, len(arr)):
+            if arr[x] < arr[lowest]:
+                lowest = arr[x]
+
+        arr[i], arr[lowest] = arr[lowest], arr[i]
         
-                

@@ -14,16 +14,16 @@ def selectionSort(array):
 
         if lowest_index == i:
             continue
-        
+
         # Else
         temp = array[i]
         array[i] = array[lowest_index]
         array[lowest_index] = temp
-        print('array: ', array) 
+        print('array: ', array)
         # print(array)
 
-    
     return array
+
 
 values = [
     2, 6, 1
@@ -31,15 +31,15 @@ values = [
 
 sorted = selectionSort(values)
 
-print(sorted)   
+print(sorted)
+
 
 def selectionSort(array):
     for i in range(0, len(array)-1):
         lowest = i
-        
+
         for p in range(i+1, len(array)):
             if array[p] < array[lowest]:
                 lowest = p
-        
 
         temp

@@ -1,5 +1,6 @@
 values = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 
+
 def bubbleSort(arr):
     print(len(arr))
     sort_until_index = len(arr)-1
@@ -18,9 +19,8 @@ def bubbleSort(arr):
         sort_until_index -= 1
     print(steps)
     return arr
-        
+
+
 result = bubbleSort(values)
 
 print(result)
-
-
