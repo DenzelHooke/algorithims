@@ -1,6 +1,7 @@
 class BubbleSort:
     # Conditions:
-    # Array must be sorted prior
+    # N/A
+    # O(N^2)
 
     def __init__(self, array):
         self.array = array

@@ -1,6 +1,7 @@
 class BinarySearch:
     # Conditions:
     # Array must be sorted prior
+    # O(log2 N)
 
     def __init__(self, array):
         self.array = array
