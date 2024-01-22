@@ -8,19 +8,21 @@ class SelectionSort:
 
     
     def sort(self):
+        steps = 0
         for i in range(len(self.array)):
             min_index = i
-            min_value = self.array[min_index]
 
             for x in range(i+1, len(self.array)):
-                if(self.array[x] < min_value):
+
+                steps += 1
+                if(self.array[x] < self.array[min_index]):
                     min_index = x
-                    # min_value = self.array[x] 
+                    
 
-
+            steps += 1
             self.array[i], self.array[min_index] = self.array[min_index], self.array[i]
             
-                
+        print(steps)
         return self.array
 
 value = SelectionSort([5, 3, 1, 2]).sort()

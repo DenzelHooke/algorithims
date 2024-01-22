@@ -8,8 +8,23 @@ class InsertionSort:
 
     
     def sort(self):
-        return ''
+        for i in range(1, len(self.array)):
 
-value = InsertionSort([5, 3, 1, 2]).sort()
+            temp = self.array[i]
+            position = i-1
+
+            while position >= 0:
+                if self.array[position] > temp:
+                    self.array[position+1] = self.array[position]  
+                    position = position - 1
+                else:
+                    break
+            self.array[position+1] = temp
+
+        return self.array
+
+  
+
+value = InsertionSort([4, 3, 2, 1]).sort()
 
 print(value)
