@@ -1,7 +1,7 @@
 def insertionSort(array):
     for index in range(1, len(array)):
         temp_value = array[index]
-        position = index -1
+        position = index -1 
 
         while position >= 0:
             if array[position] > temp_value:

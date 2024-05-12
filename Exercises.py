@@ -1,4 +1,5 @@
 import string
+import time
 
 
 
@@ -200,7 +201,6 @@ class Reverser:
     def __init__(self):
         self.stack = Stack()
 
-    
     def reverse(self, string):
         reversedString = ''
 
@@ -215,11 +215,72 @@ class Reverser:
         print(reversedString)
 
 
+# Jan 28, 24'
+        
+# Implement a countdown from 10 to 0
+# def countDown(count):
+
+#     for x in range(count, 0, -1):
+#         print(x)
+        
+def countDown(count):
+ 
+    print(count)
+    time.sleep(.001)
+    countDown(count - 1)
+
+
+# Ch 9 #4
+    
+# Write a recurrsive function that goes through each value and returns all numbers including sub-arrays of sub-arrays.
+    
+
+def recurrsiveArray(array):
+    for element in array:
+        # Check if item is list type
+        if isinstance(element, list):
+            recurrsiveArray(element)
+            continue
+            
+        print(element)
+
+
+
+
+
+
 if __name__ == "__main__":
-    Reverser().reverse('abcde')        
+    arr = [
+        1,
+        2,
+        3,
+        [4, 5, 6],
+        7,
+        [
+            8,
+            [
+                9, 10, 11, [12, 13, 14]
+            ]
+        ],
+        [
+            15, 16, 17, 18, 19,
+            [
+                20, 21, 22,
+                [
+                    23, 24, 25, [26, 27, 29]
+                ],
+                30, 31
+            ],
+            32
+        ],
+        33
+    ]
+    recurrsiveArray(arr)
 
 
-
+    # arr = [
+    #     1, 2, [3, [4, [5, 6]]]
+    # ]
 
 
 

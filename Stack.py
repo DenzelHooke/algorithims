@@ -13,6 +13,18 @@ class Stack:
     def read(self):
         return self.data[-1]
     
+class Stack2:
+    def __init__(self):
+        self.data = []
+
+    def push(self, element):
+        self.data.append(element)
+    
+    def pop(self):
+        return self.data.pop()    
+
+    def read(self):
+        return self.data[-1]
 
 class Queue:
     def __init__(self):
@@ -27,7 +39,8 @@ class Queue:
     
     def read(self):
         return self.data[0]
-
+        
+    
 
 def testQueue():
     myQueue = Queue()
@@ -104,4 +117,4 @@ class Linter:
 
 
         
-Linter().lint("``(``var {x=y}")
+Linter().lint("(var {x=y}")
