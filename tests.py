@@ -105,7 +105,7 @@ def removeDuplicatesSortedPointer(nums):
             
 # count = 0;
 
-# pastProblems = {}
+# pastProblems 
 
 # def numOfStairs(n):
 #     global count
@@ -187,4 +187,42 @@ def removeDuplicatesSortedPointer(nums):
 
 # a = findX("abcdefghijklmnopqrstuvwxyz") 
 
-# print(a)
+# print(a)2
+
+# Max number
+
+def maxOfArray(array):
+    print("recursion")
+    
+    if len(array) == 1:
+        return array[0]
+    
+    max_remainder = maxOfArray(array[1:])
+    
+
+    if array[0] > max_remainder:
+        return array[0]
+    
+    return max_remainder
+
+def maxOfArray2(array):
+    print("recursion")
+    
+    if len(array) == 1:
+        return array[0]
+    
+    maxRemainder = maxOfArray2(array[1:])
+    
+    if array[0] > maxRemainder:
+        return array[0]
+    else:
+        return maxRemainder
+    
+    
+    
+    
+    return max_remainder
+
+
+# a = maxOfArray([1,2,3,4,5,6])
+b = maxOfArray2([1,2,3,4,5,6]) 
